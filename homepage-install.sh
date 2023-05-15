@@ -3,6 +3,7 @@ version: "3.3"
 
 volumes:
   4tb:
+    driver: local
     driver_opts:
       type: cifs
       o: "file_mode=0774,dir_mode=0774"
