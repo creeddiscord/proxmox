@@ -6,8 +6,7 @@ volumes:
     driver: local
     driver_opts:
       type: cifs
-      o: "file_mode=0774,dir_mode=0774"
-      device: "//192.168.0.110/Public"
+      device: "/media/wdnas4tb"
 
 services:
   homepage:
