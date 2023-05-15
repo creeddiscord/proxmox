@@ -5,7 +5,7 @@ volumes:
   4tb:
     driver_opts:
       type: cifs
-      o: "uid=0,iocharset=utf8,noperm 0"
+      o: "file_mode=0774,dir_mode=0774"
       device: "//192.168.0.110/Public"
 
 services:
