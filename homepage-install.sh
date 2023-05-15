@@ -1,4 +1,4 @@
-cd && mkdir -p ~/dockers/homepage/ && echo '---
+cd ~ && mkdir -p ~/dockers/homepage/ && echo '---
 version: "3.3"
 services:
   homepage:
