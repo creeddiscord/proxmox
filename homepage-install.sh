@@ -5,8 +5,8 @@ volumes:
   4tb:
     driver_opts:
       type: cifs
-      o: "uid=0,credentials=/root/.credentials/my-credentials,iocharset=utf8,noperm 0"
-      device: //192.168.0.110/Public/
+      o: "uid=0,iocharset=utf8,noperm 0"
+      device: "//192.168.0.110/Public"
 
 services:
   homepage:
