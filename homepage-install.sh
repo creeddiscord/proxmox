@@ -1,7 +1,7 @@
 cd && mkdir -p ~/dockers/homepage/ && echo '---
-version: "2.1"
+version: "3.3"
 services:
-  ombi:
+  homepage:
     image: ghcr.io/benphelps/homepage:latest
     container_name: homepage
     volumes:
