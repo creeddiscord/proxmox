@@ -11,7 +11,7 @@ services:
       - WEBUI_PORT=8080
     volumes:
       - ./config:/config
-      - /media/nas4tb/Downloads:/downloads
+      - downloads:/media/nas4tb/Downloads
     ports:
       - 8080:8080
       - 6881:6881
