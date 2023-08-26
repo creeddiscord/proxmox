@@ -16,12 +16,12 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - WEBUI_PORT=8080
+      - WEBUI_PORT=8090
     volumes:
       - ./config:/config
       - ./downloads:/media/nas4tb/Downloads
     ports:
-      - 8080:8080
+      - 8090:8090
       - 6881:6881
       - 6881:6881/udp
     restart: unless-stopped' >> ~/dockers/qbittorrent/docker-compose.yml && cd ~/dockers/qbittorrent && docker pull lscr.io/linuxserver/qbittorrent:latest && docker compose up -d
