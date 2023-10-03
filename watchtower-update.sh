@@ -1,4 +1,4 @@
-cd ~ && docker stop watchtower && docker rm watchtower && docker image prune --all -y && mkdir -p ~/dockers/watchtower/ && echo '---
+cd ~ && docker stop watchtower && docker rm watchtower && docker image prune --all --force && mkdir -p ~/dockers/watchtower/ && echo '---
 version: "3"
 
 services:
