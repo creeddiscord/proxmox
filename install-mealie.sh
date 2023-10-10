@@ -20,7 +20,7 @@ services:
       - TZ=Europe/London
       - MAX_WORKERS=1
       - WEB_CONCURRENCY=1
-      - BASE_URL=https://meals.stroudy.tv
+      - BASE_URL=https://mealie.yourdomain.com
     restart: always
 
 volumes:
