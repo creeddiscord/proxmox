@@ -1,25 +1,18 @@
 cd && mkdir -p ~/dockers/qbittorrent/ && echo '---
 version: "2.1"
 
-volumes:
-  ./downloads:
-    driver: local
-    driver_opts:
-      type: cifs
-      device: "192.168.0.11/Public"
-
 services:
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=0
+      - PGID=0
       - TZ=Etc/UTC
       - WEBUI_PORT=8090
     volumes:
       - ./config:/config
-      - ./downloads:/media/nas4tb/Downloads
+      - /media/Downloads:/media/Downloads
     ports:
       - 8090:8090
       - 6881:6881
