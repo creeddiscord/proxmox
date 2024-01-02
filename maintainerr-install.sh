@@ -10,5 +10,5 @@ services:
     environment:
       - TZ=Europe/London
     ports:
-      - 8154:8154
+      - 8154:80
     restart: unless-stopped' > ~/dockers/maintainerr/docker-compose.yml && cd ~/dockers/maintainerr && docker compose up -d
