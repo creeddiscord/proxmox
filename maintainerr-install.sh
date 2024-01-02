@@ -1,5 +1,5 @@
-cd ~ && mkdir -p ~/dockers/maintainerr/ && echo 'version: '3'
-
+cd ~ && mkdir -p ~/dockers/maintainerr/ && echo '---
+version: "3"
 services:
   maintainerr:
     image: jorenn92/maintainerr:latest
