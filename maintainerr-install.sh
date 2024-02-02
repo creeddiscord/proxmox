@@ -3,12 +3,13 @@ version: "3"
 
 services:
   maintainerr:
-    image: jorenn92/maintainerr:latest
+    image: ghcr.io/jorenn92/maintainerr:latest
     container_name: maintainerr
+    user: 1000:1000
     volumes:
       - ./data:/opt/data
     environment:
       - TZ=Europe/London
     ports:
-      - 8154:80
+      - 6246:6246
     restart: unless-stopped' > ~/dockers/maintainerr/docker-compose.yml && cd ~/dockers/maintainerr && docker compose up -d
