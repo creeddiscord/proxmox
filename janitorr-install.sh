@@ -1,6 +1,5 @@
 cd ~ && mkdir -p ~/dockers/janitorr/ && echo '---
 version: "3"
-
 services:
   janitorr:
     container_name: janitorr
