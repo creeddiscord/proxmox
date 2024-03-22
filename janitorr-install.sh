@@ -1,5 +1,5 @@
 cd ~ && mkdir -p ~/dockers/janitorr/ && echo '---
-version: 3
+version: "3"
 
 services:
   janitorr:
