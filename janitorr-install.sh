@@ -6,7 +6,7 @@ services:
     container_name: janitorr
     image: schaka/janitorr:develop
     ports:
-      - 8978:8978 # Technically, we don't publish any endpoints, so this isn't strictly required
+      - 8978:8978
     volumes:
       - /appdata/janitorr/config:/config 
       - /share_media:/data
