@@ -10,7 +10,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
+      - TZ=Europe/London
       - LOCAL_NET=192.168.0.0/24 #optional
     volumes:
       - ./config:/config
