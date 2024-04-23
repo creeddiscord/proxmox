@@ -9,7 +9,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-      - CHROME_CLI=https://www.linuxserver.io/ #optional
+      - CHROME_CLI=https://www.google.com/ #optional
     volumes:
       - ./config:/config
     ports:
