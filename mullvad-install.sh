@@ -13,9 +13,9 @@ services:
       - TZ=Etc/UTC
       - LOCAL_NET=192.168.0.0/24 #optional
     volumes:
-      - /path/to/config:/config
+      - ./config:/config
     ports:
-      - 4000:4000
-      - 4001:4001
+      - 3000:3000
+      - 3001:3001
     shm_size: "1gb"
     restart: always' > ~/dockers/mullvad/docker-compose.yml && cd ~/dockers/mullvad && docker compose up -d
