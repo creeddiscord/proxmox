@@ -10,6 +10,6 @@ services:
       TZ: Europe/London
       WATCHTOWER_CLEANUP: "true"
       WATCHTOWER_DEBUG: "true"
-    image: containrrr/watchtower:latest
+    image: containrrr/watchtower:latest-dev
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock' > ~/dockers/watchtower/docker-compose.yml && cd ~/dockers/watchtower && docker compose up -d
