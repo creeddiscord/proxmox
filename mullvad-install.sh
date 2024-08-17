@@ -15,7 +15,7 @@ services:
     volumes:
       - ./config:/config
     ports:
-      - 3000:3000
+      - 6901:6901
       - 3001:3001
     shm_size: "1gb"
     restart: always' > ~/dockers/mullvad/docker-compose.yml && cd ~/dockers/mullvad && docker compose up -d
