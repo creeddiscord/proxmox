@@ -1,7 +1,7 @@
 cd ~ && mkdir -p ~/dockers/chromium/ && echo '---
 services:
   chromium:
-    image: lscr.io/linuxserver/chromium:latest
+    image: kasmweb/chromium:develop	
     container_name: chromium
     security_opt:
       - seccomp:unconfined #optional
